@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.titulo{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    color: rgb(43, 52, 130);
+}
+
+h2{
+    font-size: 25px;
+    color: rgb(43, 52, 130);
+    margin-left: 95px;
+}
+
+nav{
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(43, 52, 130);
+    font-size: 20px;
+    
+}
+
+a{
+    
+    padding-left:35px;
+    text-decoration: none;
+    color: white;
+}
+
+.grilla {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.big{
+    width: 100%;
+    height: 300px;
+}
+
+h3{
+    color: rgb(43, 52, 130);
+    margin: 20px;
+    font-size: 20px;
+}
+h4{
+    color: rgb(43, 52, 130);
+    margin: 20px;
+    font-size: 20px;
+}
+
+.servicio{
+    align-self: flex-end;
+    position: relative;
+    background-color: rgb(43, 52, 130);
+    width: 130px;
+    color:rgb(231, 73, 73) ;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 22px;
+    border: solid rgb(43, 52, 130);
+    margin-right: 20px; /* igual o mayor que el ancho de la imagen */
+}
+
+.servicio img{
+    position: absolute;
+    right: -30px; /* valor negativo */
+    top: -10px; /* valor positivo */
+    width: 50px;
+    height: 70px;
+}
+
+.foot{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 52, 130);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+p{
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top:5px;
+    font-size: 20px;
+}
+.icons{
+    padding: 20px;
+}
+/*Catalogo de servicios*/
+.catalogo{
+    padding: 5px;
+    background-color: rgb(43, 52, 130);
+    border: solid rgb(43, 52, 130);
+    margin-top: 20px;
+    position:relative ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left:50px ;
+    color:rgb(231, 73, 73) ;
+    font-size: 20px;
+}
+.catalogo img{
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    width: 50px;
+    height: 50px;
+}
+#container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+    
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(43, 52, 130);
+  }
+  
+  .card img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card h2 {
+    position: absolute;
+    top: 63%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    font-size: 22px;
+    color: black;
+  }
+  
+  
+ 
