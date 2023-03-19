@@ -167,6 +167,123 @@ p{
     font-size: 22px;
     color: black;
   }
-  
-  
+.blanco{
+    background-color: white;
+    padding: 20px 20px 30px 20px;
+    border-radius: 10px;
+}  
+.contratar{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
  
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+  }
+  
+  .popup-content {
+    max-width: 95%;
+    height: 500px;
+    background-color: rgb(43, 52, 130);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    font-size: 13px;
+    top: 70px;
+  }
+  .containerImage{
+    justify-content: right;
+    display: flex;
+  
+  }
+  .indication{
+    font-size: 14px;
+    padding: 0px;
+    padding-top: 10px;
+  }
+  .popup-image{
+    margin: 10px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    
+  }
+  .popup-name{
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    padding: 0;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+  }
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .popup-form{
+    font-size: 15px;
+    
+  }
+  .contratar-final{
+    color: rgb(231, 73, 73);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: black;
+    
+  }
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 10px;
+    
+  }
+  .input-container label {
+    width: 100%;
+    text-align: left;
+    margin-right: 10px;
+    
+  } 
+  .input-container input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  .input-container textarea {
+    width: 100%;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
