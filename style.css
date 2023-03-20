@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +9,13 @@
 
 body{
     background-color: white;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     margin: 0;
     overflow-x: hidden;
+}
+main{
+  margin-bottom: 10px;
 }
 
 .titulo{
@@ -33,12 +39,12 @@ h2{
 }
 
 nav{
-    padding: 20px;
+    padding: 10px;
     margin-top: 5px;
     display: flex;
     width: 100%;
     background-color: rgb(43, 52, 130);
-    font-size: 20px;
+    font-size: 18px;
     
 }
 
@@ -144,7 +150,7 @@ p{
     position: relative;
     border-radius: 10px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     width: 150px;
     height: 200px;
     background-color: rgb(43, 52, 130);
@@ -199,10 +205,11 @@ p{
   }
   
   .popup-content {
+    
     max-width: 95%;
     height: 500px;
     background-color: rgb(43, 52, 130);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     position: relative;
     color: white;
@@ -212,12 +219,22 @@ p{
   .containerImage{
     justify-content: right;
     display: flex;
-  
+    padding: 0px;
   }
   .indication{
     font-size: 14px;
     padding: 0px;
     padding-top: 10px;
+    
+  }
+  .descripcionConteiner{
+    display: flex;
+    flex-direction: column;
+  }
+  .descripcion{
+    
+    font-size: 14px;
+    padding: 0px;
   }
   .popup-image{
     margin: 10px;
@@ -243,12 +260,16 @@ p{
   }
   .popup-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background-color: transparent;
+    top: 220px;
+    right: x;
+    border: solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
+    color: rgb(231, 73, 73);
   }
   .popup-form{
     font-size: 15px;
@@ -257,10 +278,14 @@ p{
   .contratar-final{
     color: rgb(231, 73, 73);
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     border-radius: 10px;
-    border-color: black;
+    border: 2px;
+    border-color: solid white;
+    display: flex;
+    margin-top: 30px;
+    
     
   }
   .input-container {
