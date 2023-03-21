@@ -116,12 +116,12 @@ const products = [
     const popDescription=document.createElement('div');
     popupContent.appendChild(popDescription);
     popDescription.classList.add('descripcionConteiner');
-    popDescription.appendChild(descripcion);
+    
     const name = document.createElement('p');
     name.classList.add('popup-name'); 
     name.textContent = product.name;
     popDescription.appendChild(name);
-  
+    popDescription.appendChild(descripcion);
     const form = document.createElement('form');
     form.classList.add('popup-form');
     form.innerHTML = `
