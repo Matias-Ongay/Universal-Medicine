@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x:hidden
 }
 
 body{
@@ -54,6 +55,7 @@ a{
     padding-right: 20px;
     text-decoration: none;
     color: white;
+    
 }
 
 .grilla {
@@ -80,25 +82,20 @@ h4{
 }
 
 .servicio{
+    display: flex;
     align-self: flex-end;
-    position: relative;
     background-color: rgb(43, 52, 130);
     width: 130px;
-    color:rgb(231, 73, 73) ;
     padding: 10px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    font-size: 22px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: solid rgb(43, 52, 130);
-    margin-right: 20px; /* igual o mayor que el ancho de la imagen */
 }
-
-.servicio img{
-    position: absolute;
-    right: -30px; /* valor negativo */
-    top: -10px; /* valor positivo */
-    width: 50px;
-    height: 70px;
+button{
+  background-color: rgb(43, 52, 130);
+  border: solid rgb(43, 52, 130);
+  color: rgb(231, 73, 73);
+  font-size: 22px;
 }
 
 .foot{
@@ -107,6 +104,7 @@ h4{
     background-color: rgb(43, 52, 130);
     display: flex;
     flex-direction: column;
+    text-align: center;
     margin-top: 0px;
 }
 p{
@@ -119,6 +117,10 @@ p{
 .icons{
     padding: 20px;
 }
+.icons img{
+  width: 80px;
+  height: 80px;
+}
 /*Catalogo de servicios*/
 .catalogo{
     padding: 5px;
@@ -126,18 +128,15 @@ p{
     border: solid rgb(43, 52, 130);
     margin-top: 20px;
     position:relative ;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-left:50px ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
     color:rgb(231, 73, 73) ;
     font-size: 20px;
+    
 }
-.catalogo img{
-    position: absolute;
-    left: 0px;
-    top: -10px;
-    width: 50px;
-    height: 50px;
+.subtitulo{
+  width: 100%;
 }
 #container{
    display: flex;
@@ -148,47 +147,42 @@ p{
 }
 
 .card {
-    position: relative;
-    border-radius: 10px;
-    padding: 10px;
+    
+    padding: 5px;
     margin: 10px;
-    width: 150px;
-    height: 200px;
+    width: 160px;
+    height: 300px;
     background-color: rgb(43, 52, 130);
+    overflow: hidden;
   }
   
   .card img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
+    
+    width: 150px;
+    height: 200px;
   }
   
   .card h2 {
-    position: absolute;
-    top: 63%;
-    left: -20px;
-    transform: translate(-50%, -50%);
+    margin: 0px;
     text-align: center;
     z-index: 1;
     font-size: 22px;
-    color: black;
+    color:white;
   }
 .blanco{
     background-color: white;
-    width: 130px;
+    width: 150px;
     height: 140px;
-    padding: 20px 20px 30px 20px;
-    border-radius: 10px;
+    
+    
 }  
 .contratar{
     width: 100%;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
-    border-radius: 10px;
-    border-color: black;
-    color: black;
+    border-color: white;
+    color: rgb(231, 73, 73);
     font-size: 20px;
     font-weight: bold;
 }
@@ -211,21 +205,20 @@ p{
     
     max-width: 95%;
     height: 550px;
-    background-color: rgb(43, 52, 130);
+    background-color: white;
     padding: 10px;
-    border-radius: 10px;
     position: relative;
-    color: white;
-    font-size: 13px;
+    color: rgb(43, 52, 130);
     top: 90px;
   }
   .containerImage{
+    color: rgb(43, 52, 130);
     justify-content: right;
     display: flex;
     padding: 0px;
   }
   .indication{
-    font-size: 14px;
+    font-size: 16px;
     padding: 0px;
     padding-top: 10px;
     
@@ -235,31 +228,34 @@ p{
     flex-direction: column;
   }
   .descripcion{
-    border-bottom: solid white;
-    
+    border-bottom: solid rgb(43, 52, 130);
+    color: rgb(43, 52, 130);
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 17px;
     padding: 0px;
     padding-bottom: 10px;
 
   }
+  .indication{
+    color: rgb(43, 52, 130);
+  }
   .popup-image{
-    margin: 10px;
+    width: 150px;
+    height: 90px;
     top: 0;
     right: 0;
     background-color: white;
     padding: 10px;
     padding-bottom: 20px;
-    border-radius: 10px;
     
   }
   .popup-name{
-    color: white;
-    font-size: 20px;
+    color: rgb(43, 52, 130);
+    font-size: 25px;
     text-align: left;
     position: relative;
     padding: 0;
-    border-bottom: solid white;
+    border-bottom: solid rgb(43, 52, 130);
     margin-top: 10px;
     margin-bottom: 10px;
     
@@ -271,7 +267,6 @@ p{
     right: x;
     border: solid white;
     background-color: white;
-    border-radius: 5px;
     padding: 3px;
     font-size: 24px;
     font-weight: bold;
@@ -287,11 +282,13 @@ p{
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
-    border-radius: 10px;
     border: 2px;
-    border-color: solid white;
+    border-color: solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 10px;
     display: flex;
     margin-top: 30px;
+    margin-bottom: 120px;
     
     
   }
@@ -300,6 +297,8 @@ p{
     flex-direction: row;
     align-items: left;
     margin-bottom: 10px;
+    border: 5px;
+    
     
   }
   .input-container label {
@@ -307,17 +306,17 @@ p{
     text-align: left;
     margin-right: 10px;
     
+    
   } 
   .input-container input {
-    border-radius: 5px;
     border: 1px solid #ccc;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .input-container textarea {
     width: 100%;
-    
-    border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   @media(min-width:500px){
@@ -335,10 +334,7 @@ p{
       padding-left: 55px;
       font-size: 30px;
     }
-    .catalogo img{
-      width: 60px;
-      height: 60px;
-    }
+    
   }
   @media(min-width:650px){
     .titulo{
@@ -360,24 +356,20 @@ p{
       width: 220px;
       font-size: 35px;
     }
-    .servicio img{
-      width: 70px;
-      height: 90px;
-    }
+    
     h4{
       font-size: 30px;
     }
     .card{
       width: 250px;
-      height: 300px;
+      height: 390px;
     }
-    .blanco{
-      width: 160px;
-      height: 170px;
-    
+    .card img{
+      width: 240px;
+      height: 270px;
     }
     .card h2 {
-      top: 55%;
+      top: 70%;
       left: 30px;
       font-size: 27px;
     }
@@ -412,17 +404,26 @@ p{
     }
   }
   @media(min-width:900px){
+    
     .grilla{
-      
-      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+      position: relative;
     }
-   
     .big{
-      width: 60%;
-      height: 100%;
+      width: 70%;
+      
     }
     h3{
       width: 30%;
+      margin:0px;
+      padding: 20px;
+    }
+    .servicio{
+      align-items: center;
+      position: absolute;
+      top: 400px;
+      right: 0px;
     }
     .titulo{
       font-size: 50px;
@@ -431,16 +432,18 @@ p{
       font-size: 45px;
     }
     nav{
-      font-size: 40px;
+      font-size: 50px;
+      justify-content: left;
+      padding-left: 20px;
+      
+    }
+    a{
+      padding-right: 40px;
     }
     .catalogo{
       padding: 5px;
       padding-left: 85px;
       font-size: 50px;
-    }
-    .catalogo img{
-      width: 90px;
-      height: 90px;
     }
     p{
       font-size: 30px;
@@ -449,9 +452,6 @@ p{
     .indication{
       font-size: 30px;
     }
-    
-
-
   }
   @media(min-width:1200px){
     .indication{
@@ -475,15 +475,19 @@ p{
     }
     .card{
       width: 350px;
-      height: 400px;
+      height: 500px;
+    }
+    .card img{
+      width: 340px;
+      height: 350px;
     }
     .blanco{
-      width: 250px;
+      width: 350px;
       height: 260px;
     
     }
     .card h2 {
-      top: 63%;
+      top: 73%;
       left: 75px;
       font-size: 37px;
     }

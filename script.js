@@ -2,52 +2,52 @@
 const products = [
     {
       name: 'Inyectables',
-      image: '../imagenes/jeringa.png',
+      image: '../imagenes/jeringa.jpg',
       descripcion:''
     },
     {
       name: 'Ambulancia',
-      image: '../imagenes/ambulancia.png',
+      image: '../imagenes/ambulancia.jpg',
       descripcion:'Traslados,Eventos ,Alquiler para obras.Ambulancias 4x2 y 4x4'
     },
     {
       name: 'Medicos',
-      image: '../imagenes/medico.png',
+      image: '../imagenes/medico.jpg',
       descripcion:'Clinico , Pediatra , Traumatologo , Cardiologo , Ecografista , Psiquiatra , Dermatologo , Ginecologo , Neurologo , Oftanmologo'
     },
     {
       name: 'Radiologos ',
-      image: '../imagenes/rayos.png',
+      image: '../imagenes/rayos.jpg',
       descripcion:''
     },
     {
       name: 'Enfermeros',
-      image: '../imagenes/enfermeros.png',
+      image: '../imagenes/enfermeros.jpg',
       descripcion:''
     },
     {
       name: 'Material',
-      image: '../imagenes/materiales.png',
+      image: '../imagenes/materiales.jpg',
       descripcion:'Tubos de oxigeno,Concentradores de oxigeno,Nebulizadores,Camas ortopedicas,Sillas de Ruedas'
     },
     {
       name: 'Odontologia',
-      image: '../imagenes/diente.png',
+      image: '../imagenes/diente.jpg',
       descripcion:'Odontologia de Urgencia'
     },
     {
       name: 'Bioquimicos',
-      image: '../imagenes/bioquimico.png',
+      image: '../imagenes/bioquimico.jpg',
       descripcion:''
     },
     {
       name: 'Electro',
-      image: '../imagenes/electro.png',
+      image: '../imagenes/electro.jpg',
       descripcion:'Electrocardiogramas'
     },
     {
       name: 'Podologo',
-      image: '../imagenes/pies.png',
+      image: '../imagenes/pies.jpg',
       descripcion:'Electrocardiogramas'
     },
   ];
@@ -101,7 +101,7 @@ const products = [
     popupContainerImage.classList.add('containerImage');
 
     const indication=document.createElement('p');
-    indication.innerText="Por favor ingrese los siguientes datos para contratar el servicio";
+    indication.innerText="Por favor ingrese los siguientes datos para contratar el servicio,luego presione Contratar. ";
     indication.classList.add('indication');
     const image = document.createElement('img');
     image.classList.add('popup-image');
