@@ -212,8 +212,9 @@ p{
   }
   
   .popup-content {
+    position: fixed;
     max-width: 95%;
-    height: 550px;
+    height: 80%;
     background-color: white;
     padding: 10px;
    
@@ -271,6 +272,7 @@ p{
 
   }
   .popup-close {
+   
     position: absolute;
     top: 10px;
     right: x;
@@ -399,7 +401,7 @@ p{
     .catalogo{
       padding: 5px;
       padding-left: 55px;
-      font-size: 30px;
+      font-size: 40px;
     }
     
   }
@@ -643,7 +645,7 @@ p{
       font-size: 40px;
     }
     .popup-close{
-      font-size: 70px;
+      font-size: 40px;
       
     }
     .foot p{
