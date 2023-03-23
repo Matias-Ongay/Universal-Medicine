@@ -43,7 +43,7 @@ nav{
     display: flex;
     width: 100%;
     background-color: rgb(43, 52, 130);
-    font-size: 18px;
+    font-size: 21px;
     justify-content: center;
 }
 
@@ -74,9 +74,11 @@ a{
     font-size: 20px;
 }
 h4{
+  display: flex;
     color: rgb(43, 52, 130);
     margin: 20px;
     font-size: 20px;
+    max-width: 100%;
 }
 
 .servicio{
@@ -119,8 +121,8 @@ p{
   padding: 0px;
 }
 .icons img{
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
 }
 .top{
   display: flex;
@@ -252,8 +254,8 @@ p{
     top: 0;
     right: 0;
     background-color: white;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding-left: 10px;
+    
     
   }
   .popup-name{
@@ -286,13 +288,13 @@ p{
     
   }
   .contratar-final{
-    color: rgb(231, 73, 73);
+    color: white;
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
     border: 2px;
     border-color: solid black;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:rgb(43, 52, 130);
     border: 10px;
     display: flex;
     margin-top: 30px;
@@ -486,6 +488,10 @@ p{
     .text3{
       font-size: 30px;
     }
+    .icons img{
+      width: 100px;
+      height: 100px;
+    }
   }
   @media(min-width:1000px){
     
@@ -571,8 +577,8 @@ p{
     width: 60%;
   }
   .icons img{
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
   }
   }
   

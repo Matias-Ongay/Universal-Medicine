@@ -48,7 +48,7 @@ const products = [
     {
       name: 'Podologo',
       image: '../imagenes/pies.jpg',
-      descripcion:'Electrocardiogramas'
+      descripcion:''
     },
   ];
   
