@@ -15,9 +15,7 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-main{
-  margin-bottom: 10px;
-}
+
 
 .titulo{
     display: flex;
@@ -70,7 +68,7 @@ a{
     height: 300px;
 }
 
-h3{
+.epigrafe{
     color: rgb(43, 52, 130);
     margin: 20px;
     font-size: 20px;
@@ -114,12 +112,19 @@ p{
     padding-top:5px;
     font-size: 20px;
 }
-.icons{
+.icons {
     padding: 20px;
 }
+.icons a{
+  padding: 0px;
+}
 .icons img{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+}
+.top{
+  display: flex;
+  flex-direction: column;
 }
 /*Catalogo de servicios*/
 .catalogo{
@@ -136,7 +141,10 @@ p{
     
 }
 .subtitulo{
-  width: 100%;
+ max-width: 100%;
+ color: rgb(43, 52, 130);
+ margin: 20px;
+
 }
 #container{
    display: flex;
@@ -202,12 +210,11 @@ p{
   }
   
   .popup-content {
-    
     max-width: 95%;
     height: 550px;
     background-color: white;
     padding: 10px;
-    position: relative;
+   
     color: rgb(43, 52, 130);
     top: 90px;
   }
@@ -263,7 +270,7 @@ p{
   }
   .popup-close {
     position: absolute;
-    top: 220px;
+    top: 10px;
     right: x;
     border: solid white;
     background-color: white;
@@ -273,6 +280,7 @@ p{
     cursor: pointer;
     color: rgb(231, 73, 73);
   }
+  
   .popup-form{
     font-size: 15px;
     
@@ -288,7 +296,7 @@ p{
     border: 10px;
     display: flex;
     margin-top: 30px;
-    margin-bottom: 120px;
+    margin-bottom: 10px;
     
     
   }
@@ -318,6 +326,63 @@ p{
     border: 1px solid #ccc;
     background-color: rgba(0, 0, 0, 0.3);
   }
+  /*Nosotros*/
+  .container-nosotros{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    background-color: rgb(43, 52, 130);
+  }
+  .text1{
+    color: rgb(43, 52, 130);
+    background-color: white;
+    margin: 10px;
+  }
+  .text2{
+    color: rgb(43, 52, 130);
+    background-color: white;
+    margin: 10px;
+  }
+  .text3{
+    color: rgb(43, 52, 130);
+    background-color: white;
+    margin: 10px;
+  }
+  .imagen1 {
+    width: 100%;
+    height: auto;
+    
+    
+  }
+  .imagen1 img{
+    width: 100%;
+  }
+  .imagen2 {
+    width: 100%;
+    height: auto;
+  }
+  .imagen2 img{
+    width: 100%;
+    height: 400px;
+  }
+  .imagen3{
+    width: 100%;
+    height: auto;
+  }
+  .imagen3 img{
+    width: 100%;
+    height: 400px;
+  }
+  .cont1{
+    background-color: rgb(43, 52, 130);
+  }
+  .cont2{
+    background-color: rgb(43, 52, 130);
+  }
+  .cont3{
+    background-color: rgb(43, 52, 130);
+    
+  }
 
   @media(min-width:500px){
     .titulo{
@@ -346,16 +411,22 @@ p{
     nav{
       font-size: 35px;
     }
-    h3{
+    .epigrafe{
       font-size: 30px;
     }
     .big{
       height: 100%;
     }
-    .servicio{
+    .servicio {
       width: 220px;
-      font-size: 35px;
+      
     }
+    .servicio button{
+      font-size: 45px;
+    }
+    .subtitulo{
+     font-size: 30px;
+     }
     
     h4{
       font-size: 30px;
@@ -378,7 +449,7 @@ p{
     }
     .popup-close{
       font-size: 40px;
-      top: 150px;
+     
     }
     .popup-content{
       height: 750px;
@@ -402,8 +473,21 @@ p{
     .contratar-final{
       font-size: 50px;
     }
+    .foot p{
+      font-size: 25px;
+      
+    }
+    .text1{
+      font-size: 30px;
+    }
+    .text2{
+      font-size: 30px;
+    }
+    .text3{
+      font-size: 30px;
+    }
   }
-  @media(min-width:900px){
+  @media(min-width:1000px){
     
     .grilla{
       flex-wrap: wrap;
@@ -414,7 +498,7 @@ p{
       width: 70%;
       
     }
-    h3{
+    .epigrafe{
       width: 30%;
       margin:0px;
       padding: 20px;
@@ -452,10 +536,65 @@ p{
     .indication{
       font-size: 30px;
     }
+    .foot p{
+      font-size: 30px;
+      
+    }
+
+
+  .imagen1{
+    height: 400px;
   }
+  .imagen1 img{
+    height: 100%;
+  }
+  .cont2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   max-width: 100%;
+    margin: 10px;
+    
+  }
+  .imagen2 {
+    width: 40%;
+    height: auto;
+    padding-right: 10px;
+    
+  }
+  .imagen2 img {
+    height: 100%;
+  }
+  .text2{
+    margin: 0px;
+    
+    width: 60%;
+  }
+  .icons img{
+    width: 90px;
+    height: 90px;
+  }
+  }
+  
   @media(min-width:1200px){
+    .titulo{
+      font-size: 70px;
+    }
+    h2{
+      font-size: 60px;
+    }
+   
+    .servicio button{
+      font-size: 40px;
+    }
     .indication{
       font-size: 40px;
+    }
+    .epigrafe{
+      font-size: 50px;
+    }
+    h4{
+      font-size: 50px;
     }
     .popup-content{
       max-width: 75%;
@@ -486,6 +625,9 @@ p{
       height: 260px;
     
     }
+    .subtitulo{
+      font-size: 45px;
+      }
     .card h2 {
       top: 73%;
       left: 75px;
@@ -495,9 +637,20 @@ p{
       font-size: 40px;
     }
     .popup-close{
-      font-size: 40px;
-      top: 150px;
+      font-size: 70px;
+      
     }
-
-
+    .foot p{
+      font-size: 35px;
+      
+    }
+    .text1{
+      font-size: 40px;
+    }
+    .text2{
+      font-size: 40px;
+    }
+    .text3{
+      font-size: 40px;
+    }
   }
