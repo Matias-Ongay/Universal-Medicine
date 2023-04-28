@@ -1,23 +1,27 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Island+Moments&family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x:hidden
+    
 }
 
 body{
     background-color: white;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
     margin: 0;
     overflow-x: hidden;
 }
 
 
 .titulo{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     margin-top: 30px;
     margin-left: 20px;
@@ -35,6 +39,7 @@ h2{
     font-size: 25px;
     color: rgb(43, 52, 130);
     margin-left: 95px;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav{
@@ -45,6 +50,7 @@ nav{
     background-color: rgb(43, 52, 130);
     font-size: 21px;
     justify-content: center;
+    font-weight: 500;
 }
 
 a{
@@ -71,7 +77,8 @@ a{
 .epigrafe{
     color: rgb(43, 52, 130);
     margin: 20px;
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: bold;
 }
 h4{
   display: flex;

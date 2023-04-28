@@ -3,7 +3,12 @@ const products = [
     {
       name: 'Inyectables',
       image: '../imagenes/jeringa.jpg',
-      descripcion:''
+      descripcion:'Indique qué medicación se aplicará y el horario en que se necesita'
+    },
+    {
+      name: 'Enfermeros',
+      image: '../imagenes/enfermeros.jpg',
+      descripcion:'Puede solicitar diversas prestaciones como sueros, curaciones, control de signos vitales, sondas, medición de glucemia, extracción de secreciones, nebulizaciones, entre otras'
     },
     {
       name: 'Ambulancia',
@@ -16,15 +21,21 @@ const products = [
       descripcion:'Clinico , Pediatra , Traumatologo , Cardiologo , Ecografista , Psiquiatra , Dermatologo , Ginecologo , Neurologo , Oftanmologo'
     },
     {
-      name: 'Radiologos ',
-      image: '../imagenes/rayos.jpg',
-      descripcion:''
+      name: 'Electro',
+      image: '../imagenes/electro.jpg',
+      descripcion:'Por favor, indique el motivo por el cual necesita un electro '
     },
     {
-      name: 'Enfermeros',
-      image: '../imagenes/enfermeros.jpg',
-      descripcion:''
+      name: 'Oxigenoterapia',
+      image: '../imagenes/oxigeno.jpg',
+      descripcion:'Por favor, indique si necesita tubo o concentrador de oxigeno '
     },
+    {
+      name: 'Radiologos ',
+      image: '../imagenes/rayos.jpg',
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
+    },
+   
     {
       name: 'Material',
       image: '../imagenes/materiales.jpg',
@@ -33,18 +44,29 @@ const products = [
     {
       name: 'Odontologia',
       image: '../imagenes/diente.jpg',
-      descripcion:'Odontologia de Urgencia'
+      descripcion:'Por favor, indique cuál es su problema, necesidad o urgencia. '
     },
     {
       name: 'Bioquimicos',
       image: '../imagenes/bioquimico.jpg',
-      descripcion:''
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
     {
-      name: 'Electro',
-      image: '../imagenes/electro.jpg',
-      descripcion:'Electrocardiogramas'
+      name: 'Fonoaudiólogo ',
+      image: '../imagenes/fono.jpg',
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
+    {
+      name: 'Masoterapeuta',
+      image: '../imagenes/maso.jpg',
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
+    },
+    {
+      name: 'Psicólogo',
+      image: '../imagenes/psico.jpg',
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
+    },
+    
     {
       name: 'Podologo',
       image: '../imagenes/pies.jpg',
