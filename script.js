@@ -31,7 +31,7 @@ const products = [
       descripcion:'Por favor, indique si necesita tubo o concentrador de oxigeno '
     },
     {
-      name: 'Radiologos ',
+      name: 'Radiologos',
       image: '../imagenes/rayos.jpg',
       descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
@@ -52,7 +52,7 @@ const products = [
       descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
     {
-      name: 'Fonoaudiólogo ',
+      name: 'Fonoaudiólogo',
       image: '../imagenes/fono.jpg',
       descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
@@ -64,6 +64,11 @@ const products = [
     {
       name: 'Psicólogo',
       image: '../imagenes/psico.jpg',
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
+    },
+    {
+      name: 'Kinesiólogo',
+      image: '../imagenes/kine.jpg',
       descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
     
@@ -146,7 +151,8 @@ const products = [
     popDescription.appendChild(descripcion);
     const form = document.createElement('form');
     form.classList.add('popup-form');
-    form.innerHTML = `
+    if(product.name==="Medicos" || product.name==="Radiologos" || product.name==="Ecografista"|| product.name==="Enfermeros" || product.name==="Quimicos"  || product.name==="Odontologia" || product.name==="Kinesiologo" || product.name==="Fonoaudiólogo" || product.name==="Psicólogo" || product.name==="Masoterapeuta"|| product.name==="Kinesiólogo" ){
+      form.innerHTML = `
       <div class="input-container">
         <label for="name">Nombre y Apellido:</label>
         <input type="text" id="name" name="name">
@@ -156,14 +162,32 @@ const products = [
         <input type="email" id="email" name="email">
       </div>
       <div class="input-container">
-        <label for="message">Padecimiento:</label>
+        <label for="message">Diagnostico del paciente:</label>
         <textarea id="message" name="message"></textarea>
       </div>
       <div class="input-container">
-        <label for="message">Descripcion del servicio que necesita,materiales o tipo de medico:</label>
+        <label for="message">Indicaciones(tipo de medico,materiales,etc):</label>
         <textarea id="message2" name="message"></textarea>
       </div>
     `;
+
+    }else{
+      form.innerHTML = `
+      <div class="input-container">
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="input-container">
+        <label for="email">Direccion:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="input-container">
+        <label for="message">Indicaciones(tipo de medico,materiales,etc):</label>
+        <textarea id="message2" name="message"></textarea>
+      </div>
+    `;
+    }
+   
     const contratarFinal=document.createElement('button');
     contratarFinal.classList.add('contratar-final');
     contratarFinal.innerText="Contratar"

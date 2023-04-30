@@ -26,7 +26,7 @@ body{
     margin-top: 30px;
     margin-left: 20px;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h1{
@@ -84,18 +84,24 @@ h4{
   display: flex;
     color: rgb(43, 52, 130);
     margin: 20px;
-    font-size: 20px;
+    font-size: 23px;
     max-width: 100%;
+}
+.ubi{
+  display: flex;
+  flex-direction: column;
+}
+.ubi a img{
+  width: 100%;
 }
 
 .servicio{
     display: flex;
-    align-self: flex-end;
+    justify-content: center;
     background-color: rgb(43, 52, 130);
-    width: 130px;
+    width: 100%;
     padding: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
     border: solid rgb(43, 52, 130);
 }
 button{
@@ -103,6 +109,7 @@ button{
   border: solid rgb(43, 52, 130);
   color: rgb(231, 73, 73);
   font-size: 22px;
+  text-align: center;
 }
 
 .foot{
@@ -119,6 +126,7 @@ p{
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top:5px;
+    padding-right: 20px;
     font-size: 20px;
 }
 .icons {
@@ -428,10 +436,7 @@ p{
     .big{
       height: 100%;
     }
-    .servicio {
-      width: 220px;
-      
-    }
+    
     .servicio button{
       font-size: 45px;
     }
@@ -518,12 +523,7 @@ p{
       margin:0px;
       padding: 20px;
     }
-    .servicio{
-      align-items: center;
-      position: absolute;
-      top: 400px;
-      right: 0px;
-    }
+    
     .titulo{
       font-size: 50px;
     }
