@@ -521,14 +521,9 @@ p{
       padding: 20px;
     }
     
-    .titulo{
-      font-size: 50px;
-    }
-    h2{
-      font-size: 45px;
-    }
+
     nav{
-      font-size: 50px;
+      font-size: 25px;
       justify-content: left;
       padding-left: 20px;
       
@@ -552,8 +547,6 @@ p{
       font-size: 30px;
       
     }
-
-
   .imagen1{
     height: 400px;
   }
@@ -589,13 +582,8 @@ p{
   }
   
   @media(min-width:1200px){
-    .titulo{
-      font-size: 70px;
-    }
-    h2{
-      font-size: 60px;
-    }
-   
+    
+    
     .servicio button{
       font-size: 40px;
     }
@@ -603,10 +591,10 @@ p{
       font-size: 40px;
     }
     .epigrafe{
-      font-size: 50px;
+      font-size: 40px;
     }
     h4{
-      font-size: 50px;
+      font-size: 40px;
     }
     .popup-content{
       max-width: 75%;
@@ -666,3 +654,4 @@ p{
       font-size: 40px;
     }
   }
+  
