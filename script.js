@@ -37,7 +37,7 @@ const products = [
     },
    
     {
-      name: 'Material',
+      name: 'Equipo medico',
       image: '../imagenes/materiales.jpg',
       descripcion:'Tubos de oxigeno,Concentradores de oxigeno,Nebulizadores,Camas ortopedicas,Sillas de Ruedas'
     },

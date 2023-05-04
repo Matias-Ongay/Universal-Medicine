@@ -24,9 +24,10 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0px;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 h1{
@@ -36,12 +37,16 @@ h1{
 }
 
 h2{
+  padding-left: 12px;
     font-size: 25px;
     color: rgb(43, 52, 130);
-    margin-left: 95px;
+    margin-left: 0px;
     font-family: 'Roboto', sans-serif;
 }
-
+.logo{
+  width: 80px;
+  
+}
 nav{
     padding: 10px;
     margin-top: 5px;
@@ -188,6 +193,7 @@ p{
   }
   
   .card h2 {
+    padding: 0px;
     margin: 0px;
     text-align: center;
     z-index: 1;
@@ -427,6 +433,10 @@ p{
     }
     h2{
       font-size: 40px;
+    }
+    .logo{
+      width: 140px;
+      
     }
     nav{
       font-size: 35px;
