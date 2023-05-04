@@ -24,8 +24,8 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 0px;
     margin-bottom: 0px;
     font-size: 24px;
 }
@@ -49,18 +49,19 @@ h2{
 }
 nav{
     padding: 10px;
+    padding-left: 20px;
     margin-top: 5px;
     display: flex;
     width: 100%;
     background-color: rgb(43, 52, 130);
     font-size: 21px;
-    justify-content: center;
+    justify-content: left;
     font-weight: 500;
 }
 
 a{
     
-    padding-left: 20px;
+    
     padding-right: 20px;
     text-decoration: none;
     color: white;
@@ -95,8 +96,13 @@ h4{
 .ubi{
   display: flex;
   flex-direction: column;
+  
+}
+.ubi a{
+  padding: 0px;
 }
 .ubi a img{
+  
   width: 100%;
 }
 
@@ -151,6 +157,7 @@ p{
 /*Catalogo de servicios*/
 .catalogo{
     padding: 5px;
+    padding-left: 20px;
     background-color: rgb(43, 52, 130);
     border: solid rgb(43, 52, 130);
     margin-top: 20px;
@@ -422,7 +429,7 @@ p{
     }
     .catalogo{
       padding: 5px;
-      padding-left: 55px;
+      padding-left: 20px;
       font-size: 40px;
     }
     
@@ -544,7 +551,7 @@ p{
     }
     .catalogo{
       padding: 5px;
-      padding-left: 85px;
+      padding-left: 20px;
       font-size: 50px;
     }
     p{

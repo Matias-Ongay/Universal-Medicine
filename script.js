@@ -1,4 +1,5 @@
 /*Listado de productos*/ 
+let num =0;
 const products = [
     {
       name: 'Inyectables',
@@ -152,6 +153,7 @@ const products = [
     const form = document.createElement('form');
     form.classList.add('popup-form');
     if(product.name==="Medicos" || product.name==="Radiologos" || product.name==="Ecografista"|| product.name==="Enfermeros" || product.name==="Quimicos"  || product.name==="Odontologia" || product.name==="Kinesiologo" || product.name==="Fonoaudiólogo" || product.name==="Psicólogo" || product.name==="Masoterapeuta"|| product.name==="Kinesiólogo" ){
+      num =1;
       form.innerHTML = `
       <div class="input-container">
         <label for="name">Nombre y Apellido:</label>
@@ -172,6 +174,7 @@ const products = [
     `;
 
     }else{
+      num=2;
       form.innerHTML = `
       <div class="input-container">
         <label for="name">Nombre y Apellido:</label>
@@ -198,13 +201,27 @@ const products = [
     popupContainer.appendChild(popupContent);
   
     pop.appendChild(popupContainer);
-    contratarFinal.addEventListener('click', () => {
-      const nameValue = document.getElementById('name').value;
-      const emailValue = document.getElementById('email').value;
-      const padecimientoValue = document.getElementById('message').value;
-      const descripcionValue = document.getElementById('message2').value;
-      const whatsappMessage = `Hola, mi nombre es ${nameValue} y mi dirección es ${emailValue}. Me gustaría contratar el servicio de ${product.name}. Tengo el siguiente padecimiento: ${padecimientoValue}. Necesitaria lo siguiente: ${descripcionValue}.  ¿Podrías Confirmar el servicio?`;
-      const whatsappLink = `https://api.whatsapp.com/send?phone=+542616731229&text=${encodeURIComponent(whatsappMessage)}`;
-      window.open(whatsappLink, '_blank');
-    });
+    if(num==1){
+      contratarFinal.addEventListener('click', () => {
+        const nameValue = document.getElementById('name').value;
+        const emailValue = document.getElementById('email').value;
+        const padecimientoValue = document.getElementById('message').value;
+        const descripcionValue = document.getElementById('message2').value;
+        const whatsappMessage = `Hola, mi nombre es ${nameValue} y mi dirección es ${emailValue}. Me gustaría contratar el servicio de ${product.name}. Mi diagnostico: ${padecimientoValue}. Necesitaria lo siguiente: ${descripcionValue}.  ¿Podrías Confirmar el servicio?`;
+        const whatsappLink = `https://api.whatsapp.com/send?phone=+542616731229&text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappLink, '_blank');
+      });
+
+    }else{
+      contratarFinal.addEventListener('click', () => {
+        const nameValue = document.getElementById('name').value;
+        const emailValue = document.getElementById('email').value;
+        const descripcionValue = document.getElementById('message2').value;
+        const whatsappMessage = `Hola, mi nombre es ${nameValue} y mi dirección es ${emailValue}. Me gustaría contratar el servicio de ${product.name}.Necesitaria lo siguiente:${descripcionValue}.  ¿Podrías Confirmar el servicio?`;
+        const whatsappLink = `https://api.whatsapp.com/send?phone=+542616731229&text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappLink, '_blank');
+      });
+
+    }
+    
   }
