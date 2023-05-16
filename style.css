@@ -55,7 +55,7 @@ nav{
     width: 100%;
     background-color: rgb(43, 52, 130);
     font-size: 21px;
-    justify-content: left;
+    justify-content: center;
     font-weight: 500;
 }
 
@@ -118,7 +118,7 @@ h4{
 button{
   background-color: rgb(43, 52, 130);
   border: solid rgb(43, 52, 130);
-  color: rgb(231, 73, 73);
+  color: white;
   font-size: 22px;
   text-align: center;
 }
@@ -164,8 +164,7 @@ p{
     position:relative ;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    
-    color:rgb(231, 73, 73) ;
+    color:white ;
     font-size: 20px;
     
 }
@@ -430,7 +429,7 @@ p{
     .catalogo{
       padding: 5px;
       padding-left: 20px;
-      font-size: 40px;
+      font-size: 30px;
     }
     
   }
@@ -522,7 +521,7 @@ p{
       height: 100px;
     }
   }
-  @media(min-width:1000px){
+  @media(min-width:800px){
     
     .grilla{
       flex-wrap: wrap;
@@ -530,21 +529,15 @@ p{
       position: relative;
     }
     .big{
-      width: 70%;
-      
+      width: 70%;  
     }
     .epigrafe{
       width: 30%;
       margin:0px;
       padding: 20px;
     }
-    
-
     nav{
-      font-size: 25px;
-      justify-content: left;
       padding-left: 20px;
-      
     }
     a{
       padding-right: 40px;
@@ -552,7 +545,7 @@ p{
     .catalogo{
       padding: 5px;
       padding-left: 20px;
-      font-size: 50px;
+      font-size: 40px;
     }
     p{
       font-size: 30px;

@@ -1,7 +1,17 @@
 /*Listado de productos*/ 
 let num =0;
 const products = [
-    {
+  {
+    name: 'Ambulancia',
+    image: '../imagenes/ambulancia.jpg',
+    descripcion:'Traslados,Eventos ,Alquiler para obras.Ambulancias 4x2 y 4x4'
+  },
+  {
+    name: 'Medicos',
+    image: '../imagenes/medico.jpg',
+    descripcion:'Clinico , Pediatra , Traumatologo , Cardiologo , Ecografista , Psiquiatra , Dermatologo , Ginecologo , Neurologo , Oftanmologo'
+  }, 
+  {
       name: 'Inyectables',
       image: '../imagenes/jeringa.jpg',
       descripcion:'Indique qué medicación se aplicará y el horario en que se necesita'
@@ -12,24 +22,19 @@ const products = [
       descripcion:'Puede solicitar diversas prestaciones como sueros, curaciones, control de signos vitales, sondas, medición de glucemia, extracción de secreciones, nebulizaciones, entre otras'
     },
     {
-      name: 'Ambulancia',
-      image: '../imagenes/ambulancia.jpg',
-      descripcion:'Traslados,Eventos ,Alquiler para obras.Ambulancias 4x2 y 4x4'
-    },
-    {
-      name: 'Medicos',
-      image: '../imagenes/medico.jpg',
-      descripcion:'Clinico , Pediatra , Traumatologo , Cardiologo , Ecografista , Psiquiatra , Dermatologo , Ginecologo , Neurologo , Oftanmologo'
-    },
-    {
       name: 'Electro',
       image: '../imagenes/electro.jpg',
-      descripcion:'Por favor, indique el motivo por el cual necesita un electro '
+      descripcion:'Por favor, indique si el electro es para control o cirujia '
     },
     {
       name: 'Oxigenoterapia',
       image: '../imagenes/oxigeno.jpg',
       descripcion:'Por favor, indique si necesita tubo o concentrador de oxigeno '
+    },
+    {
+      name: 'Bioquimicos',
+      image: '../imagenes/bioquimico.jpg',
+      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
     },
     {
       name: 'Radiologos',
@@ -47,11 +52,7 @@ const products = [
       image: '../imagenes/diente.jpg',
       descripcion:'Por favor, indique cuál es su problema, necesidad o urgencia. '
     },
-    {
-      name: 'Bioquimicos',
-      image: '../imagenes/bioquimico.jpg',
-      descripcion:'Recuerde enviar la imagen de la orden medica luego de enviarnos el mensaje'
-    },
+    
     {
       name: 'Fonoaudiólogo',
       image: '../imagenes/fono.jpg',
@@ -168,7 +169,7 @@ const products = [
         <textarea id="message" name="message"></textarea>
       </div>
       <div class="input-container">
-        <label for="message">Indicaciones(tipo de medico,materiales,etc):</label>
+        <label for="message">Indicaciones:</label>
         <textarea id="message2" name="message"></textarea>
       </div>
     `;
@@ -185,7 +186,7 @@ const products = [
         <input type="email" id="email" name="email">
       </div>
       <div class="input-container">
-        <label for="message">Indicaciones(tipo de medico,materiales,etc):</label>
+        <label for="message">Indicaciones:</label>
         <textarea id="message2" name="message"></textarea>
       </div>
     `;
@@ -208,7 +209,7 @@ const products = [
         const padecimientoValue = document.getElementById('message').value;
         const descripcionValue = document.getElementById('message2').value;
         const whatsappMessage = `Hola, mi nombre es ${nameValue} y mi dirección es ${emailValue}. Me gustaría contratar el servicio de ${product.name}. Mi diagnostico: ${padecimientoValue}. Necesitaria lo siguiente: ${descripcionValue}.  ¿Podrías Confirmar el servicio?`;
-        const whatsappLink = `https://api.whatsapp.com/send?phone=+542616731229&text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappLink = `https://api.whatsapp.com/send?phone=+542617799999&text=${encodeURIComponent(whatsappMessage)}`;
         window.open(whatsappLink, '_blank');
       });
 
@@ -218,7 +219,7 @@ const products = [
         const emailValue = document.getElementById('email').value;
         const descripcionValue = document.getElementById('message2').value;
         const whatsappMessage = `Hola, mi nombre es ${nameValue} y mi dirección es ${emailValue}. Me gustaría contratar el servicio de ${product.name}.Necesitaria lo siguiente:${descripcionValue}.  ¿Podrías Confirmar el servicio?`;
-        const whatsappLink = `https://api.whatsapp.com/send?phone=+542616731229&text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappLink = `https://api.whatsapp.com/send?phone=+542617799999&text=${encodeURIComponent(whatsappMessage)}`;
         window.open(whatsappLink, '_blank');
       });
 
